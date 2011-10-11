@@ -15,7 +15,7 @@
         {
           this.render = function(data)
           {
-            $("#content").append(data.load + " ")
+            $("#cpu_load")[0].style.width = data.load + "%"
           }
         }
 
