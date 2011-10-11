@@ -15,12 +15,14 @@ Get a basic repo:
 Create a heroku app:
 
     bundle
-    heroku create my-dashboard -s bamboo-mri-1.9.2 
+    heroku create $USER--dashboard -s bamboo-mri-1.9.2 
 
 Go to heroku and add the free 5mb memcached option (addons -> memcached: learn more -> add).
 
 ![Addons](https://github.com/joakimk/dboard_example/raw/master/docs/add_memcache_step1.png)
+
 ![Memcache](https://github.com/joakimk/dboard_example/raw/master/docs/add_memcache_step2.png)
+
 ![Add](https://github.com/joakimk/dboard_example/raw/master/docs/add_memcache_step3.png)
 
 Deploy
