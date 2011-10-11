@@ -13,9 +13,12 @@
 
         var CpuLoadWidget = function()
         {
+          this.readyForNewValue = false;
           this.render = function(data)
           {
-            $("#cpu_load")[0].style.height = data.load + "%"
+            if(!readyForNewValue) {
+              $("#cpu_load").animate({ height: data.load + "%" }, 250, function { readyForNewValue = true })
+            }
           }
         }
 
