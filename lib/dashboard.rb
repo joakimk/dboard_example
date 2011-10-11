@@ -4,8 +4,6 @@ require 'sinatra'
 
 set :public, "public"
 
-require File.expand_path(File.join(File.dirname(__FILE__), 'ci_status'))
-
 get "/sources" do
   Dboard::Api.get(params)
 end
