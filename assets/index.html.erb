@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Dashboard</title>
+
+  <script src="jquery.js"></script>
+  <script src="dashboard.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        window.dashboard_version = '<%= ENV['COMMIT_HASH'] || 'unversioned' %>';
+        dashboard = new window.Dashboard();
+
+        var CpuLoadWidget = function()
+        {
+          this.render = function()
+          {
+            $("#content").append("render");
+          }
+        }
+
+        dashboard.addWidget('cpu', CpuLoadWidget);
+        dashboard.run();
+    });
+  </script>
+</head>
+
+<body>
+  <div id="content">
+  </div>
+</body>
+
+</html>
