@@ -1,7 +1,15 @@
+There is an example deployed at: http://dboard-example.heroku.com
+
 Setting up a dashboard using dboard
 ---
 
+
 Get a heroku account at http://www.heroku.com/ and add a credit card to authorize the account. We need memcached, which is free, but requires an authorized account.
+
+NOTE: This is work in progress. For example, there is nothing here about security yet. I've not tested the entire instruction from scratch yet.
+
+
+
 
 Get a basic repo:
 
@@ -29,7 +37,7 @@ Deploy
 
     git push heroku master
 
-Ensure it loads (your url will be something like http://some-dashboard.heroku.com).
+Ensure it loads (your url will be something like http://<some-dashboard>.heroku.com).
 
 Report some data:
 
