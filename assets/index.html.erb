@@ -13,13 +13,12 @@
 
         var CpuLoadWidget = function()
         {
-          this.readyForNewValue = false;
+          this.readyForNewValue = true;
           this.render = function(data)
           {
-            var that = this;
-            if(that.readyForNewValue) {
-              that.readyForNewValue = false;
-              $("#cpu_load").animate({ height: data.load + "%" }, 250, function() { that.readyForNewValue = true })
+            if(this.readyForNewValue) {
+              this.readyForNewValue = false;
+              $("#cpu_load").animate({ height: data.load + "%" }, 500, function() { CpuLoadWidget.readyForNewValue = true })
             }
           }
         }
