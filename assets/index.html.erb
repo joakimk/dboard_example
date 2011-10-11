@@ -19,7 +19,7 @@
             var that = this;
             if(that.readyForNewValue) {
               that.readyForNewValue = false;
-              $("#cpu_load").animate({ height: data.load + "%" }, 250, function { that.readyForNewValue = true })
+              $("#cpu_load").animate({ height: data.load + "%" }, 250, function() { that.readyForNewValue = true })
             }
           }
         }
