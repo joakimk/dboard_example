@@ -19,7 +19,7 @@
             if(this.readyForNewValue) {
               this.readyForNewValue = false;
               var that = this;
-              $("#cpu_load").animate({ width: data.load + "%" }, 500, function() { that.readyForNewValue = true })
+              $("#cpu_load").animate({ width: data.load + "%" }, 5000, function() { that.readyForNewValue = true })
             }
           }
         }
@@ -32,7 +32,7 @@
 
 <body style="background-color: black; color: white">
   <div id="content">
-    <h3>Current reported CPU usage:</h3>
+    <h3>Current CPU usage:</h3>
     <div style="width: 1024px; height: 100px;">
       <div id="cpu_load" style="background-color: #1111FF; width: 1024px; border-radius: 5px">&nbsp;</div>
     </div>
