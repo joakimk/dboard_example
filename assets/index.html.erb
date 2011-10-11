@@ -16,8 +16,10 @@
           this.readyForNewValue = false;
           this.render = function(data)
           {
-            if(!readyForNewValue) {
-              $("#cpu_load").animate({ height: data.load + "%" }, 250, function { readyForNewValue = true })
+            var that = this;
+            if(that.readyForNewValue) {
+              that.readyForNewValue = false;
+              $("#cpu_load").animate({ height: data.load + "%" }, 250, function { that.readyForNewValue = true })
             }
           }
         }
