@@ -1,4 +1,4 @@
-There is an example deployed at: http://dboard-example.heroku.com
+There is an example deployed at: https://dboard-example.heroku.com
 
 Setting up a dashboard using dboard
 ---
