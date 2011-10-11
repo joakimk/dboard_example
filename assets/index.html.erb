@@ -18,7 +18,8 @@
           {
             if(this.readyForNewValue) {
               this.readyForNewValue = false;
-              $("#cpu_load").animate({ height: data.load + "%" }, 500, function() { CpuLoadWidget.readyForNewValue = true })
+              var that = this;
+              $("#cpu_load").animate({ height: data.load + "%" }, 500, function() { that.readyForNewValue = true })
             }
           }
         }
