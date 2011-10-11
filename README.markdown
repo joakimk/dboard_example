@@ -15,7 +15,7 @@ Get a basic repo:
 Create a heroku app:
 
     bundle
-    heroku create my-dashboard -s bamboo-mri-1.9.2 
+    heroku create some-dashboard -s bamboo-mri-1.9.2 
 
 Go to heroku and add the free 5mb memcached option (addons -> memcached: learn more -> add).
 
@@ -29,8 +29,7 @@ Deploy
 
     git push heroku master
 
-    # Ensure it loads
-    open "http://my-dashboard.heroku.com"
+Ensure it loads (your url will be something like http://some-dashboard.heroku.com).
 
 Report some data:
 
