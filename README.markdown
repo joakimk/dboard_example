@@ -19,9 +19,9 @@ Setting up a dashboard using dboard
 
 2) Go to heroku and add the free 5mb memcached option (addons -> memcached: learn more -> add).
 
-![Addons](docs/add_memcache_step1.jpg)
-![Memcache](docs/add_memcache_step2.jpg)
-![Add](docs/add_memcache_step3.jpg)
+![Addons](https://github.com/joakimk/dboard_example/raw/master/docs/add_memcache_step1.png)
+![Memcache](https://github.com/joakimk/dboard_example/raw/master/docs/add_memcache_step2.png)
+![Add](https://github.com/joakimk/dboard_example/raw/master/docs/add_memcache_step3.png)
 
 3) Deploy
 
