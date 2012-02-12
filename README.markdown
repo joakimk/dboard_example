@@ -37,7 +37,7 @@ Deploy
 
     git push heroku master
 
-Ensure it loads (your url will be something like http://<some-dashboard>.heroku.com).
+Ensure it loads (your url will be something like http://_some-dashboard_.heroku.com).
 
 Report some data:
 
