@@ -44,3 +44,5 @@ Report some data:
     ruby cpu_usage_reporter.rb
 
 Check your dashboard, it should now print your local CPU usage.
+
+This example does not use [twitter bootstrap](http://twitter.github.com/bootstrap/scaffolding.html), but it's a simple way to get some structure. We use a modified version of twitter bootstrap 2 for our dashboard. [32 column bootstrap css for 1920 x 1080 displays](https://raw.github.com/barsoom/bootstrap/1080_32_columns/docs/assets/css/bootstrap.css).
