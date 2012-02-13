@@ -1,5 +1,7 @@
 There is an example deployed at: https://dboard-example.heroku.com
 
+This is an example of using [dboard](https://github.com/joakimk/dboard).
+
 Setting up a dashboard using dboard
 ---
 
