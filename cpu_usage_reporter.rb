@@ -1,5 +1,5 @@
 # NOTE: This example does not use Dboard::Collector, if you have more than one
-# data source you want to use that. TODO: upate this example.
+# data source you want to use that. TODO: update this example.
 
 class CPU
 
