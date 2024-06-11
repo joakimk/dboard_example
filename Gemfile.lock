@@ -5,7 +5,7 @@ GEM
     bigdecimal (3.1.8)
     csv (3.3.0)
     dalli (3.2.8)
-    dboard (3.0.0)
+    dboard (3.0.1)
       dalli
       httparty
       json
