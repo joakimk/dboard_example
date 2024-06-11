@@ -1,3 +1,6 @@
+!! This is very out of date. Use as a rough reference only. !!
+---
+
 There is an example deployed at: https://dboard-example.heroku.com
 
 This is an example of using [dboard](https://github.com/joakimk/dboard).

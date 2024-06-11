@@ -15,8 +15,9 @@ require 'rubygems'
 require 'dboard'
 
 if ENV['USER']
-  Dboard::Api::Client.basic_auth(ENV['USER'], ENV['PASSWORD']) 
-  Dboard::Api::Client.base_uri("https://#{ENV['DASHBOARD']}.heroku.com")
+  Dboard::Api::Client.endpoints = [
+    { base_uri: "https://#{ENV['DASHBOARD']}.heroku.com", basic_auth: [ ENV["USER"], ENV["PASSWORD"] ] },
+  ]
 end
 
 loop do
